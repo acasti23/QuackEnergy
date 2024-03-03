@@ -29,7 +29,7 @@ $(document).ready(function () {
                 alert("Try Again");
             }
         } else if (taskNum == 3) {
-            if (UserIn == "Sleep Room") {
+            if (UserIn == "Three") {
                 window.location.href = '/end.html';
             } else {
                 alert("Try Again");
