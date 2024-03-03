@@ -12,12 +12,13 @@ body {
 .header {
     background-color: #F5F5F5;
     margin-top: 30px;
+    border-radius: 20px;
 }
 
 #task-num {
     color: #6E5398;
     font-family: 'Jua', sans-serif; /* Specify fallback font */
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -28,11 +29,13 @@ body {
     align-items: center;
     gap: 10px;
 }
+
 .progress-bar {
     width: 90%;
-    margin-top: 40px;
     display: inline-flex;
     justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .progress-bar-line {
@@ -44,10 +47,11 @@ body {
     width: 15%;
 
 }
+
 .progress-icons {
     width:15%;
-    filter:grayscale(100%);
 }
+
 .progress-icons.active {
     width: 15%;
     filter: grayscale(0);
