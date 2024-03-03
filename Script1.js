@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         if (taskNum == 1) {
             if (UserIn == "Workshop Room") {
-                document.getElementById('task-num').innerText = "Task #2";
+                document.getElementById('task-num').innerText = "#2 I still need cloth";
                 document.getElementById('task-desc').innerText = "This is Task 2";
                 duckIcon.src = 'Images/Task1_Complete.png';//Changes Image
                 PasswordField.value = "";
@@ -19,7 +19,7 @@ $(document).ready(function () {
             }
         } else if (taskNum == 2) {
             if (UserIn == "Room") {
-                document.getElementById('task-num').innerText = "Task #3";
+                document.getElementById('task-num').innerText = "#3 Don't foget laptp";
                 document.getElementById('task-desc').innerText = "This is Task 3";
                 PasswordField.value = "";
                 taskNum++;
