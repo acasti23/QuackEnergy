@@ -21,7 +21,6 @@ $(document).ready(function () {
             if (UserIn == "Room") {
                 document.getElementById('task-num').innerText = "Task #3";
                 document.getElementById('task-desc').innerText = "This is Task 3";
-                duckIcon.src = 'Images/Task2_Complete.png';//Changes Image
                 PasswordField.value = "";
                 taskNum++;
             } else {
@@ -31,7 +30,6 @@ $(document).ready(function () {
             if (UserIn == "Sleep Room") {
                 document.getElementById('task-num').innerText = "Task completed!";
                 document.getElementById('task-desc').innerText = "Congratulations!";
-                duckIcon.src = 'Images/Task3_Complete.png';//Changes Image
                 errorMessage.style.color = "black";
                 taskNum++;
             } else {
