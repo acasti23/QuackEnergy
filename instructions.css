@@ -8,6 +8,12 @@
 }
 
 body {
+    position: absolute;
+    height: 567px;
+    width: 326px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +77,7 @@ body {
     display: flex;
     justify-content: center;
     width: 70px;
-    height: 18px;
+    height: 15px;
     background-color: #6A8371;
     color: #FFFFFF;
     font-family: 'Jua', sans-serif;
@@ -91,7 +97,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 303px;
-    height: 102px;
+    height: 80px;
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
     color: #000000;
@@ -140,7 +146,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 303px;
-    height: 150px;
+    height: 80px;
     font-family: 'Oxygen', sans-serif;
     font-size: 16px;
     color: #000000;
