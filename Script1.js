@@ -8,26 +8,25 @@ $(document).ready(function () {
         var UserIn = PasswordField.value;
 
         if (taskNum == 1) {
-            if (UserIn.toLowerCase() == "e7-210" || UserIn.toLowerCase() == "e7 210") {//Enginnering Club
+            if (UserIn.toLowerCase() == "latina completion and transfer academy"||UserIn.toLowerCase() == "latina completion & transfer academy") {//Enginnering Club
                 alert("Great Job");
+                PasswordField.value = "";
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 document.getElementById('task-num').innerText = "2 Engineering Club";
-                document.getElementById('task-desc').innerText = "Where are the meeting hosted";
+                document.getElementById('task-desc').innerText = "What does UAV stand for?";
                 Task1.src = 'Images/Task1_icon.png';
-                duckIcon.src = 'Images/Task1_Complete.png';//Changes Image
-                PasswordField.value = "";
+                duckIcon.src = 'Images/Task2_Complete.elac.png';//Changes Image
                 taskNum++;
             } else {
                 alert("Try Again");
             }
         } else if (taskNum == 2) {//Veteran Club
-            if (UserIn.toLowerCase() == "e7-101" || UserIn.toLowerCase() == "e7 101") {
+            if (UserIn.toLowerCase() == "unmanned aerial vehicle" ) {
                 alert("Great Job");
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 document.getElementById('task-num').innerText = "3 Veteran's Club";
                 document.getElementById('task-desc').innerText = "Where is the Veteran Resource Center Located";
-                Task2.src = 'Images/Task2_icon.png';
-                duckIcon.src = 'Images/Task2_Complete.png';//Changes Image
+                duckIcon.src = 'Images/Task3_Complete.elac.png';//Changes Image
                 PasswordField.value = "";
                 taskNum++;
             } else {
@@ -38,16 +37,15 @@ $(document).ready(function () {
                 alert("Great Job");
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 document.getElementById('task-num').innerText = "4 Huskies Computer Club";
-                document.getElementById('task-desc').innerText = "Where do they host their meetings";
-                Task2.src = 'Images/Task3_icon.png';
-                duckIcon.src = 'Images/Task3_Complete.png';//Changes Image
+                document.getElementById('task-desc').innerText = "What was the last Hack-a-ton we attended";
+                duckIcon.src = 'Images/Task3_Complete.elac.png';//Changes Image
                 PasswordField.value = "";
                 taskNum++;
             } else {
                 alert("Try Again");
             }
         } else if (taskNum == 4) { 
-            if (UserIn.toLowerCase() == "e7-318" || UserIn.toLowerCase() == "e7 318") {
+            if (UserIn.toLowerCase() == "athenahacks" || UserIn.toLowerCase() == "athena hacks") {
                 window.location.href = 'end.html';
                 
             } else {
