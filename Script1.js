@@ -6,7 +6,6 @@ $(document).ready(function () {
 
     submitBTN.addEventListener('click', function () {
         var UserIn = PasswordField.value;
-
         if (taskNum == 1) {
             if (UserIn.toLowerCase() == "latina completion and transfer academy"||UserIn.toLowerCase() == "latina completion & transfer academy") {//Enginnering Club
                 alert("Great Job");
@@ -14,9 +13,9 @@ $(document).ready(function () {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 document.getElementById('task-num').innerText = "2 Engineering Club";
                 document.getElementById('task-desc').innerText = "What does UAV stand for?";
-                Task1.src = 'Images/Task1_icon.png';
                 duckIcon.src = 'Images/Task2_Complete.elac.png';//Changes Image
                 taskNum++;
+                console.log(taskNum);
             } else {
                 alert("Try Again");
             }
