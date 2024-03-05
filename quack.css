@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Oxygen:wght@300;400;700&display=swap');
 
 body {
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center vertically */
@@ -11,31 +11,34 @@ body {
 
 .header {
     background-color: #F5F5F5;
+    /*position: fixed;*/
+    border: dashed;
+    border-block-color: #6E5398;
+    top: 10px;
     margin-top: 30px;
-    border-radius: 20px;
+    border-radius: 15px;
+    width: 80%;
 }
 
 #task-num {
     color: #6E5398;
     font-family: 'Jua', sans-serif; /* Specify fallback font */
-    font-size: 32px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     display: flex;
-    width: 393px;
     padding: 10px 40px;
     justify-content: center;
     align-items: center;
+    
     gap: 10px;
 }
-
 .progress-bar {
     width: 90%;
+    margin-top: 40px;
     display: inline-flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 .progress-bar-line {
@@ -47,24 +50,20 @@ body {
     width: 15%;
 
 }
-
 .progress-icons {
     width:15%;
+    filter:grayscale(100%);
 }
-
 .progress-icons.active {
     width: 15%;
     filter: grayscale(0);
 }
 
 #duck-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
+    top: 500px;
+    width: 200px;
+    height: 200px;
     flex-shrink: 0;
-    background-image: url('./assets/duck-icon.png');
     background-size: cover;
     background-color: #F8E3A0;
     border-radius: 100%;
@@ -75,13 +74,31 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #F5F5F5;
-    height: 150px;
-    width: 260px;
-    margin-top: 32px;
+    height: auto;
+    width: 70%;
+    margin-top: 0;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-
+#Question-label {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 18px;
+    background-color: #6A8371;
+    color: #FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 #task-desc {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +106,7 @@ body {
     font-size: 16px;
     color: #000;
     padding: 15px;
+    margin-top: 0px;
 }
 
 #hint-button {
@@ -107,29 +125,40 @@ body {
     margin-top: 15px;
 }
 
-.password {
+.password-box {
     display: flex;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+    height: auto;
+    width: 60%;
+    margin-top: 0;
+    justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #password-label {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 60%;
     height: 25px;
     background-color: #b5a6cf;
     color: #FFFFFF;
     font-family: 'Jua', sans-serif;
     font-size: 20px;
     line-height: normal;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 #password-input {
-    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
     height: 25px;
     background-color: #F5F5F5;
     color: #000000;
